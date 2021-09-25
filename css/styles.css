@@ -56,7 +56,8 @@ nav {
     margin-bottom: 3rem;
 }
 
-nav div {
+#page-title {
+    float: right;
     margin: 16px;
 }
 
@@ -79,30 +80,29 @@ div.flex-links {
     justify-content: space-evenly;
 
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 5rem;
 }
 
-.nav-link {
-    padding: 10px;
+.flex-links div {
+    padding: 20px;
     transition-duration: 0.2s;
-    flex-grow: 1;
-    background-color: var(--bg2);
 
     text-align: center;
-    text-decoration: underline;
     cursor: pointer;
 }
 
-.nav-link:hover {
-    flex-shrink: 0;
-
+.flex-links div:hover {
     transition-duration: 0.2s;
-    background-color: var(--bg3);
 }
 
 
 @media (width<960px) {
-    html {
+/*    html {
         font-size: 10px;
+    }
+*/
+
+    div.flex-links {
+        flex-direction: column;
     }
 }
