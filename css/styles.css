@@ -98,7 +98,11 @@ div.flex-links {
 
 @media (width<960px) {
     html {
-        font-size: 10px;
+        font-size: 15pt;
+    }
+
+    #page-title {
+        content: "VT shop";
     }
 
     div.flex-links {
