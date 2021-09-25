@@ -41,7 +41,7 @@ body {
     margin: auto;
     max-width: 960px;
     min-width: 450px;
-    color: var(--fg0);
+    color: var(--aqua);
 }
 
 nav {
@@ -97,10 +97,9 @@ div.flex-links {
 
 
 @media (width<960px) {
-/*    html {
+    html {
         font-size: 10px;
     }
-*/
 
     div.flex-links {
         flex-direction: column;
