@@ -34,6 +34,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-size: 16px;
+}
+
 article, aside, details, figcaption,
 figure, footer, header, hgroup, main,
 nav, section, summary {
@@ -78,13 +82,19 @@ nav .content ul li:not(:last-child) {
 nav .content ul li a {
     color: #fff;
     font-weight: 700;
-    font-size: 1.5em;
+    font-size: 18px;
 
     padding: 10px 0;
     text-decoration: none;
 
     border-bottom: 2px solid transparent;
     transition: border-bottom 0.25s ease;
+}
+
+@media(width<769px) {
+  nav .content ul li a {
+      font-size: 120%;
+  }
 }
 
 nav .content ul li a:hover {
@@ -124,5 +134,6 @@ header.hero .background {
 }
 
 main.landing header.hero h1 {
-    font-size: 7em;
+    font-size: 4em;
+    text-align: center;
 }
