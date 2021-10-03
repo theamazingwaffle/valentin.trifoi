@@ -118,14 +118,8 @@ header.hero {
     rgba(0, 147, 198, 0.95))
 }
 
-@keyframes vt-logo-fade {
-    0%   {color: #fff;}
-    50%  {color: #fff;}
-    100% {color: transparent;}
-}
-
 header.hero h1 {
-    color: transparent;
+    color: #fff;
     animation-name: vt-logo-fade;
     animation-duration: 3s;
 }
