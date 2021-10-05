@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+}
+
+article, aside, details, figcaption,
+figure, footer, header, hgroup, main,
+nav, section, summary {
+    display: block;
+}
+
+/*
+ * NAV BAR
+ */
+
+nav {
+    position: absolute;
+    width: 100%;
+
+    .content {
+        width: 80%;
+        height: 90px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+
+        .brand img {
+            height: 64px;
+            width: 64px;
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+
+            li {
+                &:not(:last-child) {
+                    margin-right: 40px;
+                }
+
+                a {
+                    color: #fff;
+                    font-weight: 700;
+                    font-size: 18px;
+
+                    padding: 10px 0;
+                    text-decoration: none;
+
+                    border-bottom: 2px solid transparent;
+                    transition: border-bottom 0.25s ease;
+
+                    &:hover {
+                        border-botom: 2px solid #fff;
+                    }
+
+                    @media (width<796px) {
+                        font-size: 120%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*
+ * HERO HEADER
+ */
+header.hero {
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    background-image: -webkit-linear-gradient(bottom, rgba(0, 168, 119, 0.9), rgba(0, 147, 198, 0.95));
+
+    h1 {
+        color: #fff;
+    }
+
+    .background {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-size: cover;
+        background-position: bottom;
+        z-index: -10;
+    }
+}
+
+main.landing  {
+    header.hero {
+        h1 {
+            font-size: 3em;
+            text-align: center;
+        }
+    }
+
+    section {
+        &.admins {
+            margin: 80px 0;
+
+            h1 {
+                text-align: center;
+                font-size: 3em;
+            }
+
+            ul {
+                list-style-type: none;
+
+                width: 80%;
+                margin: 0 auto;
+                margin-top: 30px;
+
+                li {
+                    display: flex;
+                    flex-direction: row;
+                    padding: 35px;
+                    margin: 50px auto;
+                    -webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
+
+                    &:not(:last-child) {
+                        border-bottom: 2px solid #ccc;
+                    }
+
+                    .logo {
+                        width: 25%;
+                        border-right: 1px solid #ccc;
+                        display: flex;
+
+                        img {
+                            width: 80%;
+                            margin: 0 auto;
+                        }
+                    }
+
+                    .text-wrapper {
+                        flex: 3;
+
+                        .text {
+                            margin: 0 auto;
+                            width: 75%;
+                            blockquote {
+                                text-align: justify;
+                                font-size: 1.2em;
+                                font-style: italic;
+                                padding: 10px 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
