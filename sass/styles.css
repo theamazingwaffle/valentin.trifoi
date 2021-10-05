@@ -11,6 +11,9 @@ figure, footer, header, hgroup, main,
 nav, section, summary {
   display: block; }
 
+h1 {
+  font-family: "Lusitana", serif; }
+
 /*
  * NAV BAR
  */
@@ -73,6 +76,9 @@ header.hero {
 main.landing header.hero h1 {
   font-size: 3em;
   text-align: center; }
+  @media (max-width: 768px) {
+    main.landing header.hero h1 {
+      font-size: 4em; } }
 main.landing section.admins {
   margin: 80px 0; }
   main.landing section.admins h1 {
@@ -87,26 +93,41 @@ main.landing section.admins {
       display: flex;
       flex-direction: row;
       padding: 35px;
-      margin: 50px auto;
-      -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2); }
-      main.landing section.admins ul li:not(:last-child) {
-        border-bottom: 2px solid #ccc; }
+      margin: 50px auto; }
+      @media (max-width: 768px) {
+        main.landing section.admins ul li {
+          flex-direction: column; } }
+      @media (min-width: 769px) {
+        main.landing section.admins ul li {
+          -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2); } }
       main.landing section.admins ul li .logo {
-        width: 25%;
-        border-right: 1px solid #ccc;
         display: flex; }
+        @media (min-width: 993px) {
+          main.landing section.admins ul li .logo {
+            width: 25%;
+            border-right: 1px solid #ccc; } }
+        @media (max-width: 992px) {
+          main.landing section.admins ul li .logo {
+            border-bottom: 1px solid #ccc; } }
         main.landing section.admins ul li .logo img {
           width: 80%;
+          height: auto;
           margin: 0 auto; }
+          @media (max-width: 992px) {
+            main.landing section.admins ul li .logo img {
+              padding-bottom: 30px; } }
       main.landing section.admins ul li .text-wrapper {
         flex: 3; }
+        @media (max-width: 992px) {
+          main.landing section.admins ul li .text-wrapper {
+            padding: 20px 0; } }
         main.landing section.admins ul li .text-wrapper .text {
           margin: 0 auto;
           width: 75%; }
+          main.landing section.admins ul li .text-wrapper .text h2 {
+            margin-bottom: 16px; }
           main.landing section.admins ul li .text-wrapper .text blockquote {
-            text-align: justify;
-            font-size: 1.2em;
-            font-style: italic;
-            padding: 10px 0; }
+            font-style: italic; }
 
 /*# sourceMappingURL=styles.css.map */

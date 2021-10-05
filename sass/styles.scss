@@ -14,6 +14,10 @@ nav, section, summary {
     display: block;
 }
 
+h1 {
+    font-family: "Lusitana", serif;
+}
+
 /*
  * NAV BAR
  */
@@ -103,6 +107,9 @@ main.landing  {
     header.hero {
         h1 {
             font-size: 3em;
+            @media(max-width: 768px) {
+                font-size: 4em;
+            }
             text-align: center;
         }
     }
@@ -126,36 +133,58 @@ main.landing  {
                 li {
                     display: flex;
                     flex-direction: row;
+
                     padding: 35px;
                     margin: 50px auto;
-                    -webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
 
-                    &:not(:last-child) {
-                        border-bottom: 2px solid #ccc;
+                    @media (max-width: 768px) {
+                        flex-direction: column;
+                    }
+
+                    @media(min-width: 769px) {
+                        -webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
+                        box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
                     }
 
                     .logo {
-                        width: 25%;
-                        border-right: 1px solid #ccc;
                         display: flex;
+
+                        @media (min-width: 993px) {
+                            width: 25%;
+                            border-right: 1px solid #ccc;
+                        }
+
+                        @media (max-width: 992px) {
+                            border-bottom: 1px solid #ccc;
+                        }
 
                         img {
                             width: 80%;
+                            height: auto;
                             margin: 0 auto;
+                            @media (max-width: 992px) {
+                                padding-bottom: 30px;
+                            }
                         }
                     }
 
                     .text-wrapper {
                         flex: 3;
 
+                        @media (max-width: 992px) {
+                            padding: 20px 0;
+                        }
+
                         .text {
                             margin: 0 auto;
                             width: 75%;
+
+                            h2 {
+                                margin-bottom: 16px;
+                            }
+
                             blockquote {
-                                text-align: justify;
-                                font-size: 1.2em;
                                 font-style: italic;
-                                padding: 10px 0;
                             }
                         }
                     }
