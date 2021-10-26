@@ -201,13 +201,14 @@ main.landing {
       padding: 30px 15px;
       margin: auto;
       display: flex;
-      flex-direction: row; }
-      @media (max-width: 768px) {
+      flex-flow: column;
+      align-items: center; }
+      @media (min-width: 769px) {
         main.landing footer .links {
-          flex-direction: column;
-          align-items: center; } }
+          flex-flow: row; }
+          main.landing footer .links ul {
+            margin-left: 20px; } }
       main.landing footer .links ul {
-        margin-left: 20px;
         list-style-type: none;
         padding: 10px; }
         main.landing footer .links ul h3 {

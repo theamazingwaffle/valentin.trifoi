@@ -216,7 +216,6 @@ main.landing  {
             list-style-type: none;
             width: 80%;
             margin: 30px auto;
-
             display: flex;
             align-content: center;
             flex-flow: column;
@@ -284,14 +283,16 @@ main.landing  {
             margin: auto;
 
             display: flex;
-            flex-direction: row;
-            @media (max-width: 768px) {
-                flex-direction: column;
-                align-items: center;
+            flex-flow: column;
+            align-items: center;
+            @media (min-width: 769px) {
+                flex-flow: row;
+                ul {
+                    margin-left: 20px;
+                }
             }
 
             ul {
-                margin-left: 20px;
                 list-style-type: none;
                 padding: 10px;
 
