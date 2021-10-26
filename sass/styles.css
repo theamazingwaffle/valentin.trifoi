@@ -65,6 +65,8 @@ header.hero {
   flex-direction: column;
   justify-content: center;
   background-image: -webkit-linear-gradient(bottom, rgba(0, 168, 119, 0.9), rgba(0, 147, 198, 0.95)); }
+  header.hero.amongus {
+    background-image: -webkit-linear-gradient(bottom, rgba(0, 50, 40, 0.9), rgba(0, 100, 90, 0.95)); }
   header.hero h1 {
     color: #fff; }
   header.hero .background {
@@ -168,12 +170,8 @@ main.landing {
         padding: 50px;
         margin: 20px; }
         @media (max-width: 768px) {
-          main.landing section.merch ul li {
-            padding: 25px;
-            margin: 0; }
-            main.landing section.merch ul li:not(:last-child) {
-              margin-bottom: 40px;
-              border-bottom: 1px solid rgba(0, 0, 0, 0.2); } }
+          main.landing section.merch ul li:not(:last-child) {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2); } }
         @media (min-width: 769px) {
           main.landing section.merch ul li {
             box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2); } }
@@ -181,8 +179,8 @@ main.landing {
           display: flex;
           margin-bottom: 30px; }
           main.landing section.merch ul li .image img {
-            width: 100%;
-            height: auto;
+            width: auto;
+            height: 40vh;
             margin: auto; }
         main.landing section.merch ul li .text {
           display: flex;

@@ -92,6 +92,10 @@ header.hero {
 
     background-image: -webkit-linear-gradient(bottom, rgba(0, 168, 119, 0.9), rgba(0, 147, 198, 0.95));
 
+    &.amongus {
+        background-image: -webkit-linear-gradient(bottom, rgba(0, 50, 40, 0.9), rgba(0, 100, 90, 0.95));
+    }
+
     h1 {
         color: #fff;
     }
@@ -235,10 +239,7 @@ main.landing  {
                 padding: 50px;
                 margin: 20px;
                 @media (max-width: 768px) {
-                    padding: 25px;
-                    margin: 0;
                     &:not(:last-child) {
-                        margin-bottom: 40px;
                         border-bottom: 1px solid rgba(0,0,0,0.2);
                     }
                 }
@@ -251,8 +252,8 @@ main.landing  {
                     display: flex;
                     margin-bottom: 30px;
                     img {
-                        width: 100%;
-                        height: auto;
+                        width: auto;
+                        height: 40vh;
                         margin: auto;
                     }
                 }
