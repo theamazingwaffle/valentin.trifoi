@@ -66,7 +66,7 @@ header.hero {
   justify-content: center;
   background-image: -webkit-linear-gradient(bottom, rgba(0, 168, 119, 0.9), rgba(0, 147, 198, 0.95)); }
   header.hero.amongus {
-    background-image: -webkit-linear-gradient(bottom, rgba(0, 50, 40, 0.9), rgba(0, 100, 90, 0.95)); }
+    background-image: -webkit-linear-gradient(bottom, rgba(90, 147, 198, 0.95), rgba(0, 168, 119, 0.9)); }
   header.hero h1 {
     color: #fff; }
   header.hero .background {
@@ -169,6 +169,17 @@ main.landing {
         flex-direction: column;
         padding: 50px;
         margin: 20px; }
+        main.landing section.merch ul li .image {
+          display: flex;
+          margin-bottom: 30px; }
+          main.landing section.merch ul li .image img {
+            width: auto;
+            height: 40vh;
+            margin: auto; }
+        main.landing section.merch ul li .text {
+          display: flex;
+          justify-content: center;
+          align-content: center; }
         @media (max-width: 768px) {
           main.landing section.merch ul li {
             margin: 20px 0; }
@@ -177,24 +188,12 @@ main.landing {
         @media (min-width: 769px) {
           main.landing section.merch ul li {
             box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2); } }
-        @media (width < 65vh) {
+        @media (max-width: 65vh) {
           main.landing section.merch ul li {
-            padding: 10px; } }
-        main.landing section.merch ul li .image {
-          display: flex;
-          margin-bottom: 30px; }
-          main.landing section.merch ul li .image img {
-            width: auto;
-            height: 40vh;
-            margin: auto; }
-            @media (width < 65vh) {
-              main.landing section.merch ul li .image img {
-                width: 80%;
-                height: auto; } }
-        main.landing section.merch ul li .text {
-          display: flex;
-          justify-content: center;
-          align-content: center; }
+            padding: 10px; }
+            main.landing section.merch ul li .image img {
+              width: 80%;
+              height: auto; } }
   main.landing footer {
     color: #fff;
     background-color: #097; }
