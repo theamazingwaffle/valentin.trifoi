@@ -12,7 +12,11 @@ nav, section, summary {
   display: block; }
 
 h1 {
-  font-family: "Lusitana", serif; }
+  font-family: sans-serif; }
+
+a {
+  text-decoration: none;
+  color: #9ed; }
 
 /*
  * NAV BAR
@@ -47,7 +51,7 @@ nav {
         transition: border-bottom 0.25s ease; }
         nav .content ul li a:hover {
           border-botom: 2px solid #fff; }
-        @media (width < 796px) {
+        @media (max-width: 768px) {
           nav .content ul li a {
             font-size: 120%; } }
 
@@ -73,61 +77,152 @@ header.hero {
     background-position: bottom;
     z-index: -10; }
 
-main.landing header.hero h1 {
-  font-size: 3em;
-  text-align: center; }
-  @media (max-width: 768px) {
-    main.landing header.hero h1 {
-      font-size: 4em; } }
-main.landing section.admins {
-  margin: 80px 0; }
-  main.landing section.admins h1 {
-    text-align: center;
-    font-size: 3em; }
-  main.landing section.admins ul {
-    list-style-type: none;
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 30px; }
-    main.landing section.admins ul li {
-      display: flex;
-      flex-direction: row;
-      padding: 35px;
-      margin: 50px auto; }
-      @media (max-width: 768px) {
-        main.landing section.admins ul li {
-          flex-direction: column; } }
-      @media (min-width: 769px) {
-        main.landing section.admins ul li {
-          -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2); } }
-      main.landing section.admins ul li .logo {
-        display: flex; }
-        @media (min-width: 993px) {
-          main.landing section.admins ul li .logo {
-            width: 25%;
-            border-right: 1px solid #ccc; } }
-        @media (max-width: 992px) {
-          main.landing section.admins ul li .logo {
-            border-bottom: 1px solid #ccc; } }
-        main.landing section.admins ul li .logo img {
-          width: 80%;
-          height: auto;
-          margin: 0 auto; }
+main.landing {
+  /* section.admins */
+  /* section.merch */ }
+  main.landing header.hero h1 {
+    font-weight: 600;
+    font-size: 3em;
+    text-align: center; }
+    @media (max-width: 768px) {
+      main.landing header.hero h1 {
+        font-size: 4em; } }
+  main.landing section.admins {
+    margin: 80px 0; }
+    main.landing section.admins h1 {
+      text-align: center;
+      font-size: 3em; }
+    main.landing section.admins ul {
+      list-style-type: none;
+      width: 80%;
+      margin: 0 auto;
+      margin-top: 30px; }
+      main.landing section.admins ul li {
+        display: flex;
+        flex-direction: row;
+        padding: 35px;
+        margin: 50px auto; }
+        @media (max-width: 768px) {
+          main.landing section.admins ul li {
+            flex-direction: column; } }
+        @media (min-width: 769px) {
+          main.landing section.admins ul li {
+            box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2); } }
+        main.landing section.admins ul li .logo {
+          display: flex; }
+          @media (min-width: 993px) {
+            main.landing section.admins ul li .logo {
+              width: 25%;
+              border-right: 1px solid #ccc; } }
           @media (max-width: 992px) {
-            main.landing section.admins ul li .logo img {
-              padding-bottom: 30px; } }
-      main.landing section.admins ul li .text-wrapper {
-        flex: 3; }
-        @media (max-width: 992px) {
-          main.landing section.admins ul li .text-wrapper {
-            padding: 20px 0; } }
-        main.landing section.admins ul li .text-wrapper .text {
-          margin: 0 auto;
-          width: 75%; }
-          main.landing section.admins ul li .text-wrapper .text h2 {
-            margin-bottom: 16px; }
-          main.landing section.admins ul li .text-wrapper .text blockquote {
-            font-style: italic; }
+            main.landing section.admins ul li .logo {
+              border-bottom: 1px solid #ccc; } }
+          main.landing section.admins ul li .logo img {
+            width: 80%;
+            height: auto;
+            margin: 0 auto; }
+            @media (max-width: 992px) {
+              main.landing section.admins ul li .logo img {
+                padding-bottom: 30px; } }
+        main.landing section.admins ul li .text-wrapper {
+          flex: 3; }
+          @media (max-width: 992px) {
+            main.landing section.admins ul li .text-wrapper {
+              padding: 20px 0; } }
+          main.landing section.admins ul li .text-wrapper .text {
+            margin: 0 auto;
+            width: 75%; }
+            main.landing section.admins ul li .text-wrapper .text h2 {
+              margin-bottom: 16px; }
+            main.landing section.admins ul li .text-wrapper .text blockquote {
+              font-style: italic;
+              padding: 10px 20px;
+              margin: 0 0 20px;
+              font-size: 17.5px;
+              color: #333;
+              border-left: 5px solid #eee; }
+  main.landing section.merch {
+    margin: 80px 0; }
+    main.landing section.merch h1 {
+      text-align: center;
+      font-size: 3em; }
+    main.landing section.merch ul {
+      list-style-type: none;
+      width: 80%;
+      margin: 30px auto;
+      display: flex;
+      align-content: center;
+      flex-flow: column;
+      align-content: center; }
+      @media (min-width: 993px) {
+        main.landing section.merch ul {
+          flex-flow: row wrap;
+          justify-content: center; }
+          main.landing section.merch ul li {
+            max-width: 60%;
+            flex-basis: 30%;
+            flex-grow: 1; } }
+      main.landing section.merch ul li {
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+        margin: 20px; }
+        @media (max-width: 768px) {
+          main.landing section.merch ul li {
+            padding: 25px;
+            margin: 0; }
+            main.landing section.merch ul li:not(:last-child) {
+              margin-bottom: 40px;
+              border-bottom: 1px solid rgba(0, 0, 0, 0.2); } }
+        @media (min-width: 769px) {
+          main.landing section.merch ul li {
+            box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2); } }
+        main.landing section.merch ul li .image {
+          display: flex;
+          margin-bottom: 30px; }
+          main.landing section.merch ul li .image img {
+            width: 100%;
+            height: auto;
+            margin: auto; }
+        main.landing section.merch ul li .text {
+          display: flex;
+          justify-content: center;
+          align-content: center; }
+  main.landing footer {
+    color: #fff;
+    background-color: #097; }
+    main.landing footer .links {
+      padding: 30px 15px;
+      margin: auto;
+      display: flex;
+      flex-direction: row; }
+      @media (max-width: 768px) {
+        main.landing footer .links {
+          flex-direction: column;
+          align-items: center; } }
+      main.landing footer .links ul {
+        margin-left: 20px;
+        list-style-type: none;
+        padding: 10px; }
+        main.landing footer .links ul h3 {
+          font-family: sans-serif;
+          font-weight: 700;
+          margin-bottom: 5px;
+          font-size: 16px;
+          text-transform: uppercase; }
+          @media (max-width: 768px) {
+            main.landing footer .links ul h3 {
+              text-align: center; } }
+        main.landing footer .links ul li {
+          margin-bottom: 3px;
+          font-size: 14px; }
+        main.landing footer .links ul li a {
+          color: #eee; }
+    main.landing footer .copy {
+      border-top: 1px solid #5b9;
+      text-align: center;
+      max-width: 80%;
+      margin: 40px auto 0 auto;
+      padding: 25px; }
 
 /*# sourceMappingURL=styles.css.map */
