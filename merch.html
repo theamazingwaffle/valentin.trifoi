@@ -1,8 +1,6 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="sass/styles.css">
     <title>Merch | Valentin Trifoi</title>
   </head>
@@ -11,7 +9,7 @@
       <nav class="navigation">
         <div class="content">
           <a href="index.html" class="brand">
-            <img src="img/vt-symbol.png">
+            <img src="img/logos/vt.png">
           </a>
           <ul>
             <li>
@@ -31,24 +29,42 @@
         <h1>Merch</h1>
         <ul>
           <li>
-            <div class="image">
-              <img src="img/merch/cercei-1.jpg">
+            <div class="carousel" id="carousel">
+              <button class="switcher left">«</button>
+              <button class="switcher right">»</button>
+              <div class="image-container">
+                <img id="1" src="img/sticker/sticker-1.jpg">
+                <img id="2" src="img/sticker/sticker-2.jpg">
+                <img id="3" src="img/sticker/sticker-3.jpg">
+              </div>
             </div>
             <div class="text">
               <h2>15 Lei</h2>
             </div>
           </li>
           <li>
-            <div class="image">
-              <img src="img/merch/cercei-1.jpg">
+            <div class="carousel" id="carousel">
+              <button class="switcher left">«</button>
+              <button class="switcher right">»</button>
+              <div class="image-container">
+                <img id="1" src="img/merch/cercei-1.jpg">
+                <img id="2" src="img/merch/cercei-1.jpg">
+                <img id="3" src="img/merch/cercei-1.jpg">
+              </div>
             </div>
             <div class="text">
-              <h2 class="price">15 Lei</h2>
+              <h2>15 Lei</h2>
             </div>
           </li>
           <li>
-            <div class="image">
-              <img src="img/merch/cercei-1.jpg">
+            <div class="carousel" id="carousel">
+              <button class="switcher left">«</button>
+              <button class="switcher right">»</button>
+              <div class="image-container">
+                <img id="1" src="img/merch/cercei-1.jpg">
+                <img id="2" src="img/merch/cercei-1.jpg">
+                <img id="3" src="img/merch/cercei-1.jpg">
+              </div>
             </div>
             <div class="text">
               <h2>15 Lei</h2>
@@ -70,5 +86,6 @@
         </div>
       </footer>
     </main>
+    <script src="js/carousel.js"></script>
   </body>
 </html>

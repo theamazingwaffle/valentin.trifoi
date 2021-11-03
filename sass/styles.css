@@ -144,11 +144,12 @@ main.landing {
               color: #333;
               border-left: 5px solid #eee; }
   main.landing section.merch {
-    margin: 80px 0; }
+    margin: 40px 0; }
     main.landing section.merch h1 {
+      text-transform: uppercase;
       text-align: center;
       font-size: 3em; }
-    main.landing section.merch ul {
+    main.landing section.merch > ul {
       list-style-type: none;
       width: 80%;
       margin: 30px auto;
@@ -157,43 +158,68 @@ main.landing {
       flex-flow: column;
       align-content: center; }
       @media (min-width: 993px) {
-        main.landing section.merch ul {
+        main.landing section.merch > ul {
           flex-flow: row wrap;
           justify-content: center; }
-          main.landing section.merch ul li {
-            max-width: 60%;
-            flex-basis: 30%;
-            flex-grow: 1; } }
-      main.landing section.merch ul li {
+          main.landing section.merch > ul > li {
+            flex-basis: 30%; } }
+      main.landing section.merch > ul > li {
+        flex-shrink: 1;
         display: flex;
-        flex-direction: column;
-        padding: 50px;
+        flex-flow: column;
+        align-content: center;
+        padding: 30px;
         margin: 20px; }
-        main.landing section.merch ul li .image {
-          display: flex;
-          margin-bottom: 30px; }
-          main.landing section.merch ul li .image img {
-            width: auto;
+        @media (max-width: 992px) {
+          main.landing section.merch > ul > li {
+            margin: 20px 0; }
+            main.landing section.merch > ul > li:not(:last-child) {
+              border-bottom: 1px solid rgba(0, 0, 0, 0.2); } }
+        @media (min-width: 993px) {
+          main.landing section.merch > ul > li {
+            box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2); } }
+        @media (max-width: 65vh) {
+          main.landing section.merch > ul > li {
+            padding: 10px; } }
+        main.landing section.merch > ul > li .carousel {
+          margin: auto;
+          margin-bottom: 40px;
+          position: relative; }
+          main.landing section.merch > ul > li .carousel > .image-container {
+            display: flex;
+            flex-flow: row;
+            overflow: hidden;
             height: 40vh;
-            margin: auto; }
-        main.landing section.merch ul li .text {
+            width: 40vh; }
+            @media (max-width: 65vh) {
+              main.landing section.merch > ul > li .carousel > .image-container {
+                height: 70vw;
+                width: 70vw; } }
+            main.landing section.merch > ul > li .carousel > .image-container img {
+              height: 100%;
+              width: auto; }
+          main.landing section.merch > ul > li .carousel .switcher {
+            position: absolute;
+            height: 100%;
+            width: 20%;
+            top: 0;
+            background: transparent;
+            color: #fff;
+            text-shadow: 1px 1px 2px #555;
+            border: none;
+            font-size: 2em; }
+            main.landing section.merch > ul > li .carousel .switcher:hover {
+              cursor: pointer; }
+            main.landing section.merch > ul > li .carousel .switcher.left {
+              left: 0; }
+            main.landing section.merch > ul > li .carousel .switcher.right {
+              right: 0; }
+        main.landing section.merch > ul > li .text {
           display: flex;
           justify-content: center;
           align-content: center; }
-        @media (max-width: 768px) {
-          main.landing section.merch ul li {
-            margin: 20px 0; }
-            main.landing section.merch ul li:not(:last-child) {
-              border-bottom: 1px solid rgba(0, 0, 0, 0.2); } }
-        @media (min-width: 769px) {
-          main.landing section.merch ul li {
-            box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2); } }
-        @media (max-width: 65vh) {
-          main.landing section.merch ul li {
-            padding: 10px; }
-            main.landing section.merch ul li .image img {
-              width: 80%;
-              height: auto; } }
+          main.landing section.merch > ul > li .text h2 {
+            font-size: 2em; }
   main.landing footer {
     color: #fff;
     background-color: #097; }
