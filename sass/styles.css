@@ -31,19 +31,35 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-direction: row; }
+    flex-flow: row; }
+    @media (max-width: 768px) {
+      nav .content {
+        flex-flow: column;
+        width: 100%;
+        margin-top: 15px; } }
     nav .content .brand img {
       height: 64px;
       width: 64px; }
+      @media (max-width: 768px) {
+        nav .content .brand img {
+          margin-bottom: 15px; } }
     nav .content ul {
       list-style-type: none;
       display: flex;
-      flex-direction: row; }
-      nav .content ul li:not(:last-child) {
-        margin-right: 40px; }
+      flex-flow: row;
+      align-items: center;
+      justify-content: space-between; }
+      @media (max-width: 768px) {
+        nav .content ul {
+          flex-flow: column; } }
+      @media (max-width: 768px) {
+        nav .content ul li:not(:last-child) {
+          margin-bottom: 8px; } }
+      @media (min-width: 769px) {
+        nav .content ul li:not(:last-child) {
+          margin-right: 40px; } }
       nav .content ul li a {
         color: #fff;
-        font-weight: 700;
         font-size: 18px;
         padding: 10px 0;
         text-decoration: none;
@@ -102,6 +118,7 @@ main.landing {
       main.landing section.links-bg div.links h1 {
         background: linear-gradient(to right, #ff0066, #3333ff);
         background-clip: text;
+        -webkit-background-clip: text;
         color: transparent;
         text-align: center;
         font-size: 3em; }
@@ -112,40 +129,52 @@ main.landing {
         list-style: none;
         display: flex;
         flex-flow: row wrap;
-        justify-content: center; }
+        justify-content: center;
+        align-items: center; }
         @media (max-width: 768px) {
           main.landing section.links-bg div.links ul {
             max-width: 100%; } }
+        @media (max-width: 768px) {
+          main.landing section.links-bg div.links ul {
+            flex-flow: column;
+            align-items: start; } }
         main.landing section.links-bg div.links ul li {
-          background-color: #111;
+          background-color: #36393f;
           padding: 10px;
           margin: 16px;
-          border-radius: 16px; }
-          main.landing section.links-bg div.links ul li.discord {
-            background-color: #36393f; }
-            main.landing section.links-bg div.links ul li.discord a div.text {
-              color: #eee; }
-              main.landing section.links-bg div.links ul li.discord a div.text h2 {
-                color: #fff; }
+          border-radius: 16px;
+          flex-grow: 1; }
+          @media (max-width: 768px) {
+            main.landing section.links-bg div.links ul li {
+              width: 100%;
+              padding: 2px;
+              margin: 8px 0; } }
           main.landing section.links-bg div.links ul li a {
+            color: lightgreen;
             display: flex;
-            flex-flow: row;
-            color: lightgreen; }
+            flex-flow: row; }
             main.landing section.links-bg div.links ul li a img {
               max-width: 64px;
               max-height: 64px;
               border-radius: 16px;
               margin: 16px; }
+              @media (max-width: 768px) {
+                main.landing section.links-bg div.links ul li a img {
+                  margin: 12px;
+                  max-width: 48px;
+                  max-height: 48px;
+                  border-radius: 12px; } }
             main.landing section.links-bg div.links ul li a div.text {
-              color: #ff3399;
+              color: #eee;
               display: flex;
               flex-flow: column;
               justify-content: center;
-              font-family: monospace;
-              text-decoration: underscore;
               margin: 16px; }
-              main.landing section.links-bg div.links ul li a div.text h2 {
-                color: #ff0066; }
+              main.landing section.links-bg div.links ul li a div.text h3 {
+                color: #fff; }
+              @media (max-width: 768px) {
+                main.landing section.links-bg div.links ul li a div.text {
+                  margin: 12px; } }
   main.landing section.admins {
     margin: 80px 0; }
     main.landing section.admins h1 {
