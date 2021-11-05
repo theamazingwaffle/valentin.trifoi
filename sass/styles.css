@@ -142,8 +142,7 @@ main.landing {
           background-color: #36393f;
           padding: 10px;
           margin: 16px;
-          border-radius: 16px;
-          flex-grow: 1; }
+          border-radius: 16px; }
           @media (max-width: 768px) {
             main.landing section.links-bg div.links ul li {
               width: 100%;
