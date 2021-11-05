@@ -89,6 +89,63 @@ main.landing {
     @media (max-width: 768px) {
       main.landing header.hero h1 {
         font-size: 4em; } }
+  main.landing section.links-bg {
+    background: linear-gradient(to right, #ff0066, #3333ff);
+    margin: 0;
+    padding-top: 5px; }
+    main.landing section.links-bg div.links {
+      padding: 80px 0;
+      color: #ff0066;
+      background-color: #000;
+      display: flex;
+      flex-flow: column; }
+      main.landing section.links-bg div.links h1 {
+        background: linear-gradient(to right, #ff0066, #3333ff);
+        background-clip: text;
+        color: transparent;
+        text-align: center;
+        font-size: 3em; }
+      main.landing section.links-bg div.links ul {
+        max-width: 80%;
+        margin: auto;
+        margin-top: 30px;
+        list-style: none;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center; }
+        @media (max-width: 768px) {
+          main.landing section.links-bg div.links ul {
+            max-width: 100%; } }
+        main.landing section.links-bg div.links ul li {
+          background-color: #111;
+          padding: 10px;
+          margin: 16px;
+          border-radius: 16px; }
+          main.landing section.links-bg div.links ul li.discord {
+            background-color: #36393f; }
+            main.landing section.links-bg div.links ul li.discord a div.text {
+              color: #eee; }
+              main.landing section.links-bg div.links ul li.discord a div.text h2 {
+                color: #fff; }
+          main.landing section.links-bg div.links ul li a {
+            display: flex;
+            flex-flow: row;
+            color: lightgreen; }
+            main.landing section.links-bg div.links ul li a img {
+              max-width: 64px;
+              max-height: 64px;
+              border-radius: 16px;
+              margin: 16px; }
+            main.landing section.links-bg div.links ul li a div.text {
+              color: #ff3399;
+              display: flex;
+              flex-flow: column;
+              justify-content: center;
+              font-family: monospace;
+              text-decoration: underscore;
+              margin: 16px; }
+              main.landing section.links-bg div.links ul li a div.text h2 {
+                color: #ff0066; }
   main.landing section.admins {
     margin: 80px 0; }
     main.landing section.admins h1 {
@@ -144,7 +201,8 @@ main.landing {
               color: #333;
               border-left: 5px solid #eee; }
   main.landing section.merch {
-    margin: 40px 0; }
+    background-color: #fafafa;
+    padding: 40px 0; }
     main.landing section.merch h1 {
       text-transform: uppercase;
       text-align: center;
@@ -164,6 +222,7 @@ main.landing {
           main.landing section.merch > ul > li {
             flex-basis: 30%; } }
       main.landing section.merch > ul > li {
+        background-color: #fff;
         flex-shrink: 1;
         display: flex;
         flex-flow: column;
@@ -188,6 +247,7 @@ main.landing {
           main.landing section.merch > ul > li .carousel > .image-container {
             display: flex;
             flex-flow: row;
+            align-items: center;
             overflow: hidden;
             height: 40vh;
             width: 40vh; }
@@ -196,8 +256,8 @@ main.landing {
                 height: 70vw;
                 width: 70vw; } }
             main.landing section.merch > ul > li .carousel > .image-container img {
-              height: 100%;
-              width: auto; }
+              max-width: 100%;
+              height: auto; }
           main.landing section.merch > ul > li .carousel .switcher {
             position: absolute;
             height: 100%;
