@@ -136,7 +136,8 @@ main.landing  {
       font-weight: 600;
       font-size: 3em;
       @media(max-width: 768px) {
-        font-size: 4em;
+        font-size: 2em;
+        max-width: 80%;
       }
       text-align: center;
     }
@@ -162,8 +163,8 @@ main.landing  {
       }
 
       ul {
-        max-width: 80%;
-        @media(max-width: 768px) {
+        max-width: 85%;
+        @media(max-width: 992px) {
           max-width: 100%;
         }
         margin: auto;
@@ -173,7 +174,7 @@ main.landing  {
 
         display: flex;
         flex-flow: row wrap;
-        justify-content: start;
+        justify-content: center;
         align-items: center;
 
         @media (max-width: 768px) {
@@ -182,6 +183,11 @@ main.landing  {
         }
 
         li {
+          flex-basis: 40%;
+          @media (min-width: 993px) {
+            flex-basis: 30%;
+          }
+
           padding: 10px;
           margin: 16px;
           border-radius: 16px;
@@ -197,6 +203,7 @@ main.landing  {
 
             display: flex;
             flex-flow: row;
+            align-items: center;
 
             img {
               max-width: 64px;

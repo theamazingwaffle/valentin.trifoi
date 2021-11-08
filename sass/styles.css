@@ -104,7 +104,8 @@ main.landing {
     text-align: center; }
     @media (max-width: 768px) {
       main.landing header.hero h1 {
-        font-size: 4em; } }
+        font-size: 2em;
+        max-width: 80%; } }
   main.landing section.links-bg {
     background: linear-gradient(to right, #ff0066, #3333ff);
     margin: 0;
@@ -120,15 +121,15 @@ main.landing {
         text-align: center;
         font-size: 3em; }
       main.landing section.links-bg div.links ul {
-        max-width: 80%;
+        max-width: 85%;
         margin: auto;
         margin-top: 30px;
         list-style: none;
         display: flex;
         flex-flow: row wrap;
-        justify-content: start;
+        justify-content: center;
         align-items: center; }
-        @media (max-width: 768px) {
+        @media (max-width: 992px) {
           main.landing section.links-bg div.links ul {
             max-width: 100%; } }
         @media (max-width: 768px) {
@@ -136,9 +137,13 @@ main.landing {
             flex-flow: column;
             align-items: start; } }
         main.landing section.links-bg div.links ul li {
+          flex-basis: 40%;
           padding: 10px;
           margin: 16px;
           border-radius: 16px; }
+          @media (min-width: 993px) {
+            main.landing section.links-bg div.links ul li {
+              flex-basis: 30%; } }
           @media (max-width: 768px) {
             main.landing section.links-bg div.links ul li {
               width: 100%;
@@ -147,7 +152,8 @@ main.landing {
           main.landing section.links-bg div.links ul li a {
             color: lightgreen;
             display: flex;
-            flex-flow: row; }
+            flex-flow: row;
+            align-items: center; }
             main.landing section.links-bg div.links ul li a img {
               max-width: 64px;
               max-height: 64px;
