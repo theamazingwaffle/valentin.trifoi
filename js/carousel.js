@@ -13,6 +13,10 @@ for (let carousel of carousels) {
     carousel.imageCount = carousel.children[2].children.length;
     let images = carousel.children[2].children;
     let image_container = carousel.children[2];
+    if (images.length < 2) {
+        carousel.children[0].style.display = "none";
+        carousel.children[1].style.display = "none";
+    }
     carousel.children[0].addEventListener('click', _ => {
         carousel.lookingAt = ((carousel.lookingAt - 1) +
                               carousel.imageCount) % carousel.imageCount;
