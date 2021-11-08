@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="164"
+   height="164"
+   viewBox="0 0 43.391666 43.391669"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20, custom)"
+   sodipodi:docname="wattpad.svg"
+   inkscape:export-filename="/home/pavel/pix/inkscape/wattpad-logo-vt.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient3558">
+      <stop
+         style="stop-color:#ff3399;stop-opacity:1"
+         offset="0"
+         id="stop3554" />
+      <stop
+         style="stop-color:#3333ff;stop-opacity:1"
+         offset="1"
+         id="stop3556" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3558"
+       id="linearGradient3560"
+       x1="49.290878"
+       y1="139.91119"
+       x2="80.967667"
+       y2="116.47967"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(43.349922,-0.04336062)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3558"
+       id="linearGradient1834-3"
+       x1="43.39167"
+       y1="149.89165"
+       x2="86.78334"
+       y2="106.49998"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.9695121,0,0,0.969512,45.376071,3.9080401)" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#404040"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.28"
+     inkscape:cx="51.171875"
+     inkscape:cy="-1.5625"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showborder="false"
+     units="px"
+     inkscape:window-width="1920"
+     inkscape:window-height="1061"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:document-rotation="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:snap-others="true"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-nodes="true"
+     inkscape:object-paths="true"
+     inkscape:snap-global="true" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-106.49998)">
+    <g
+       id="g5698"
+       transform="translate(-86.783359,3.999824e-4)"
+       inkscape:export-filename="/home/pavel/pix/inkscape/wattpad-logo-vt.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <path
+         id="path26357-2"
+         style="fill:#000000;fill-opacity:1;stroke:url(#linearGradient1834-3);stroke-width:1.32292;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:normal;stop-color:#000000"
+         d="m 97.031131,107.16104 c -5.310577,0 -9.586312,4.27523 -9.586312,9.58581 v 22.89712 c 0,5.31058 4.275735,9.58582 9.586312,9.58582 h 22.896629 c 5.31057,0 9.58581,-4.27524 9.58581,-9.58582 v -22.89712 c 0,-5.31058 -4.27524,-9.58581 -9.58581,-9.58581 z" />
+      <path
+         fill="#ff5722"
+         d="m 113.7319,124.06227 c 1.75545,-2.45828 6.3856,-7.78269 9.24777,-6.7558 0.60912,0.18881 1.1582,0.69029 1.26907,1.33638 0.40322,1.68415 -0.98728,2.75195 -3.57557,6.97292 -3.16442,5.16274 -4.13586,8.58785 -5.53955,9.96778 -2.75592,3.07862 -8.33969,1.72244 -7.67579,-6.67796 -3.31818,5.42538 -4.13915,12.03999 -9.751958,10.92467 -5.891303,-1.59573 -5.616108,-15.47561 -4.246727,-19.05514 0.09371,-0.45602 0.320072,-0.86718 0.520694,-1.28095 1.395778,-2.7005 4.630153,-2.71766 6.008771,-1.11532 1.41426,1.64457 1.00179,5.02152 0.78401,7.23166 1.46045,-2.53946 3.99463,-6.1665 6.33412,-7.96682 3.6508,-2.71698 7.86519,-0.96154 6.62516,6.41858 z"
+         id="path3513"
+         style="fill:url(#linearGradient3560);fill-opacity:1;stroke-width:0.264582" />
+    </g>
+  </g>
+</svg>

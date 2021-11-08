@@ -148,17 +148,14 @@ main.landing  {
     padding-top: 5px;
     div.links {
       padding: 80px 0;
-      color: #ff0066;
+      color: #ff3399;
       background-color: #000;
 
       display: flex;
       flex-flow: column;
 
       h1 {
-        background: linear-gradient(to right, #ff0066, #3333ff);
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
+        color: #fff;
 
         text-align: center;
         font-size: 3em;
@@ -176,15 +173,15 @@ main.landing  {
 
         display: flex;
         flex-flow: row wrap;
-        justify-content: center;
+        justify-content: start;
         align-items: center;
 
         @media (max-width: 768px) {
           flex-flow: column;
           align-items: start;
         }
+
         li {
-          background-color: #36393f;
           padding: 10px;
           margin: 16px;
           border-radius: 16px;
@@ -204,14 +201,13 @@ main.landing  {
             img {
               max-width: 64px;
               max-height: 64px;
-              border-radius: 16px;
               margin: 16px;
+              margin-right: 8px;
 
               @media (max-width: 768px) {
                 margin: 12px;
                 max-width: 48px;
                 max-height: 48px;
-                border-radius: 12px;
               }
             }
 
@@ -219,6 +215,7 @@ main.landing  {
               h3 {
                 color: #fff;
               }
+              margin-left: 8px;
               color: #eee;
               display: flex;
               flex-flow: column;
